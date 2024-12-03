@@ -61,6 +61,24 @@ const Layout = () => {
                                     {t("qa")}
                                 </NavLink>
                             </li>
+                            <li>
+                                <NavLink
+                                    to="/research"
+                                    className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}
+                                    onClick={() => setMenuOpen(false)}
+                                >
+                                    {t("Research Assistant")}
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/rotstift"
+                                    className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}
+                                    onClick={() => setMenuOpen(false)}
+                                >
+                                    {t("Rotstift")}
+                                </NavLink>
+                            </li>
                         </ul>
                     </nav>
                     <div className={styles.loginMenuContainer}>

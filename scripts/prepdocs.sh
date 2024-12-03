@@ -13,3 +13,6 @@ fi
 ./.venv/bin/python ./app/backend/prepdocs.py './data/health' --category Healthcare --verbose $additionalArgs
 ./.venv/bin/python ./app/backend/prepdocs.py './data/bigdata-lecture' --category BigData --verbose $additionalArgs
 ./.venv/bin/python ./app/backend/prepdocs.py './data/azure-cloud-compliance' --category AzureCloudCompliance --verbose $additionalArgs
+./.venv/bin/python ./app/backend/prepdocs.py './data/swiss-education' --category SwissEducation --verbose $additionalArgs
+
+
