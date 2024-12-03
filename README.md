@@ -1,7 +1,7 @@
 <!--
 ---
-name: RAG chat app with your data (Python)
-description: Chat with your domain data using Azure OpenAI and Azure AI Search.
+name: Azure Education Agents Light  (Demo App)
+description: Chat with your domain data using Azure OpenAI and Azure AI Search. Customized and enhanced for Swiss Education sector.
 languages:
 - python
 - typescript
@@ -17,14 +17,12 @@ urlFragment: azure-search-openai-demo
 ---
 -->
 
-# RAG chat app with Azure OpenAI and Azure AI Search (Python)
+# Swiss Education Information Assistant Demo 
 
-This solution creates a ChatGPT-like frontend experience over your own documents using RAG (Retrieval Augmented Generation). It uses Azure OpenAI Service to access GPT models, and Azure AI Search for data indexing and retrieval.
+This solution creates a ChatGPT-like frontend experience over your own documents using RAG (Retrieval Augmented Generation). 
+It uses Azure OpenAI Service to access GPT models, and Azure AI Search for data indexing and retrieval.
+This solution's backend is written in Python. 
 
-This solution's backend is written in Python. There are also [**JavaScript**](https://aka.ms/azai/js/code), [**.NET**](https://aka.ms/azai/net/code), and [**Java**](https://aka.ms/azai/java/code) samples based on this one. Learn more about [developing AI apps using Azure AI Services](https://aka.ms/azai).
-
-[![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=599293758&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)
-[![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/azure-search-openai-demo)
 
 ## Important Security Notice
 

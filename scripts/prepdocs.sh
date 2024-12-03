@@ -9,4 +9,7 @@ if [ $# -gt 0 ]; then
   additionalArgs="$@"
 fi
 
-./.venv/bin/python ./app/backend/prepdocs.py './data/*' --verbose $additionalArgs
+# Details see docs/data.ingestion.md // https://github.com/faxg/azure-edu-agent-light/blob/main/docs/data_ingestion.md
+./.venv/bin/python ./app/backend/prepdocs.py './data/health' --category Healthcare --verbose $additionalArgs
+./.venv/bin/python ./app/backend/prepdocs.py './data/bigdata-lecture' --category BigData --verbose $additionalArgs
+./.venv/bin/python ./app/backend/prepdocs.py './data/azure-cloud-compliance' --category AzureCloudCompliance --verbose $additionalArgs

@@ -198,8 +198,12 @@ export const Settings = ({
                 onChange={(_ev?: React.FormEvent<HTMLElement | HTMLInputElement>, option?: IDropdownOption) => onChange("includeCategory", option?.key || "")}
                 aria-labelledby={includeCategoryId}
                 options={[
-                    { key: "", text: t("labels.includeCategoryOptions.all") }
-                    // { key: "example", text: "Example Category" } // Add more categories as needed
+                    { key: "", text: t("labels.includeCategoryOptions.all") },
+                    { key: "AzureCloudCompliance", text: "Azure Cloud Compliance" },
+                    { key: "BigData", text: "BigData Lecture script" },
+                    { key: "Healthcare", text: "Healthcare Space" }
+
+                    // Add more categories as needed. TODO this should match more strictly with search index, blob containers, prepdocs.sh and data ingestion.
                 ]}
                 onRenderLabel={props => renderLabel(props, includeCategoryId, includeCategoryFieldId, t("helpTexts.includeCategory"))}
             />

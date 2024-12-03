@@ -4,9 +4,11 @@ import HttpApi from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 
 import daTranslation from "../locales/da/translation.json";
+import deTranslation from "../locales/de/translation.json";
 import enTranslation from "../locales/en/translation.json";
 import esTranslation from "../locales/es/translation.json";
 import frTranslation from "../locales/fr/translation.json";
+import itTranslation from "../locales/it/translation.json";
 import jaTranslation from "../locales/ja/translation.json";
 import nlTranslation from "../locales/nl/translation.json";
 import ptBRTranslation from "../locales/ptBR/translation.json";
@@ -16,6 +18,10 @@ export const supportedLngs: { [key: string]: { name: string; locale: string } } 
     da: {
         name: "Dansk",
         locale: "da-DK"
+    },
+    de: {
+        name: "Deutsch",
+        locale: "de-DE"
     },
     en: {
         name: "English",
@@ -28,6 +34,10 @@ export const supportedLngs: { [key: string]: { name: string; locale: string } } 
     fr: {
         name: "Français",
         locale: "fr-FR"
+    },
+    it: {
+        name: "Italian",
+        locale: "it-IT"
     },
     ja: {
         name: "日本語",
@@ -56,8 +66,10 @@ i18next
     .init({
         resources: {
             da: { translation: daTranslation },
+            de: { translation: deTranslation },
             en: { translation: enTranslation },
             es: { translation: esTranslation },
+            it: { translation: itTranslation },
             fr: { translation: frTranslation },
             ja: { translation: jaTranslation },
             nl: { translation: nlTranslation },
